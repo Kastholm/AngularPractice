@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "preinit": "curl -u Kastholm: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 https://api.github.com/user/repos -d \"{\\\"name\\\":\\\"AngularPractice\\\"}\"",
+    "preinit": "curl -u 1234 https://api.github.com/user/repos -d \"{\\\"name\\\":\\\"AngularPractice\\\"}\"",
     "init": "git init && git add . && git commit -m 'Initialising' && git branch -M main",
     "postinit": "git remote add origin https://github.com/Kastholm/AngularPractice.git && git push --set-upstream origin main"
   },
