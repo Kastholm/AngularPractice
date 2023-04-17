@@ -1,0 +1,25 @@
+<input type="text" [(ngModel)]="name" />
+<h2>{{ name }}</h2>
+<hr />
+<ManualComponent></ManualComponent>
+
+<div class="app-class-component"></div>
+<hr />
+<h2>Choose your new username here</h2>
+<h3>
+  Lige nu er dit username
+  <b style="color: blue; font-size: 30px">{{ username }}</b>
+</h3>
+<input type="text" [(ngModel)]="newusername" />
+<br />
+<br />
+<button [disabled]="!newusername" (click)="changeUsername()">
+  Skift username
+</button>
+<p *ngIf="newusername; else noServer">New name is {{ newusername }}</p>
+<ng-template #noServer>
+  <p>Du har ikke skrevet et nyt username</p>
+</ng-template>
+
+
+<!-- Lav en dark mode knap med ngStyle og boolean -->
